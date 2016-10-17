@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <title>Gearhead Gives</title>
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
+	  <script src="js/jquery-1.11.2.min.js"></script>
+	  <script src="js/app.js"></script>
+	  <script src="js/jquery.sticky.js"></script>
+	  <script type="text/javascript" src="js/slick/slick.min.js"></script> 
+	  <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
+      <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
+	  <link href="css/styles.css" type="text/css" rel="stylesheet"/>
+  </head>
+  
+  <body>
+      <div id="container" class="clearfix">
+          <header><a href="index.html"><h1>Gearhead Gives</h1></a></header>
+		  <div class="hearts"><img src="img/hearts.jpg" alt="Hearts"/></div>
+		  <div id="navigation">
+			<div id="sticker">
+				<div class="hearts"><img src="img/hearts.jpg" alt="Hearts"/></div>
+				<ul class="main-nav">
+					<li><a href="#" class="menu-click">Menu</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Donation Request</a></li>
+					<li><a href="#">Volunteer</a></li>
+				    <li><a href="#">Events</a></li>
+					<li><a href="#">Become an Ambassador</a></li>
+					<li><a href="#">Partners</a></li>
+				</ul>
+				<ul class="secondary-nav">
+						<li><a href="#">About</a></li>
+						<li><a href="#">Donation Request</a></li>
+						<li><a href="#">Volunteer</a></li>
+						<li><a href="#">Events</a></li>
+						<li><a href="#">Become an Ambassador</a></li>
+						<li><a href="#">Partners</a></li>
+			  </ul>
+		  </div>
+			  
+		  </div>
+		  <div id="banner">
+			  <span class="prev"></span>
+			  <h2>Giving Back</h2>
+			  <span class="next"></span>
+		  </div>
+		  <div class="dots">
+			  <ol id="slide-dots">
+				<li><a href="#slide1" class="active">1</a></li>
+				<li><a href="#slide2">2</a></li>
+				<li><a href="#slide3">3</a></li>
+				<li><a href="#slide4">4</a></li>
+			</ol>
+
+		  </div>
+
+		  <div id="circles">
+			  <ul>
+				  <li><img alt="people" src="img/people.gif" onmouseover="this.src='img/people2.gif'" onmouseout="this.src='img/people.gif'" /></li>
+				  <li><img alt="places" src="img/places.gif" onmouseover="this.src='img/places2.gif'" onmouseout="this.src='img/places.gif'" /></li>
+				  <li><img alt="purpose" src="img/purpose.gif" onmouseover="this.src='img/purpose2.gif'" onmouseout="this.src='img/purpose.gif'" /></li>
+			  </ul>
+		  </div>
+
+		 </div>
+	  
+		  <div id="footer">
+			  <a href="http://www.gearheadoutfitters.com"><img src="GHlogo.gif" alt="Gearhead Logo"/></a>
+		  </div>
+	  <script>
+		  $(document).ready(function(){
+			$("#sticker").sticky({topSpacing:0});
+		  });
+		  $('.slider-slick').slick({
+			  dots: true,
+			  infinite: true,
+			  speed: 500,
+			  fade: true,
+			  cssEase: 'linear'
+		  });
+	</script>
+
+  </body>
+
+</html>
